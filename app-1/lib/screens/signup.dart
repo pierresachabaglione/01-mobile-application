@@ -17,6 +17,7 @@ class _SignUpPageState extends State<SignUpPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFF1A0341), // Light gray background color
       appBar: AppBar(title: Text("subscription")),
       // AppBar with title "subscription" 
 
@@ -27,6 +28,13 @@ class _SignUpPageState extends State<SignUpPage> {
           mainAxisAlignment: MainAxisAlignment.center,
 
           children: [
+            // logo
+            Image.asset(
+              'assets/logo_app.png', 
+                width: 494, 
+                height: 324,
+                
+            ),
             TextField(
               controller: _emailController,
               decoration: InputDecoration(

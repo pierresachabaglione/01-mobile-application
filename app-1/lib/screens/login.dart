@@ -15,9 +15,12 @@ class _LoginPageState extends State<LoginPage> {
   final TextEditingController _passwordController = TextEditingController();
   // Controller for password input
 
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFF1A0341),
       appBar: AppBar(title: Text("Connexion")),
 
       body: Padding(
@@ -25,13 +28,20 @@ class _LoginPageState extends State<LoginPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            // logo
+            Image.asset(
+              'assets/logo_app.png', 
+                width: 494, 
+                height: 324,
+                
+            ),
             // email
             TextField(
               controller: _emailController, 
               decoration: InputDecoration(
                 labelText: "Email", 
-                border: OutlineInputBorder(), 
-              ),
+                border: OutlineInputBorder(),
+                             ),
             ),
             SizedBox(height: 10),
 

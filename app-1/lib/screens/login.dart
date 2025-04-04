@@ -61,6 +61,10 @@ class _LoginPageState extends State<LoginPage> {
               onPressed: () {
                 // Handle login logic here
               },
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.white,
+                backgroundColor: Color(0xFF1A0341),
+              ),
               child: Text("connexion"), 
             ),
              SizedBox(height: 10),
@@ -73,7 +77,30 @@ class _LoginPageState extends State<LoginPage> {
                     MaterialPageRoute(builder: (context) => SignUpPage()),
                   );
                 },
+                style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.white,
+                backgroundColor: Color(0xFF1A0341),
+              ),
                 child: Text("Create account", style: TextStyle(fontSize: 16)),
+                
+
+              ),
+              TextButton(
+                onPressed: () {
+                  // Navigate to the search page
+                  // when the user clicks on "continu without login"
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SearchPage()),
+                  );
+                },
+                style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.white,
+                backgroundColor: Color(0xFF1A0341),
+              ),
+                child: Text("Continue without login", style: TextStyle(fontSize: 16)),
+                
+
               ),
           ],
         ),

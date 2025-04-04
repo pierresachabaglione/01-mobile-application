@@ -66,6 +66,10 @@ class _SignUpPageState extends State<SignUpPage> {
               onPressed: () {
                 // Action d'inscription 
               },
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.white,
+                backgroundColor: Color(0xFF1A0341),
+              ),
               child: Text("S'inscrire"),
             ),
           ],
